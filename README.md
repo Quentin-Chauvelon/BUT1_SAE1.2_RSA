@@ -1,9 +1,9 @@
 # SAE RSA
 
-pour avoir se que j'ai fais
-
+pour recuperer les chose a faire
+    
     git pull
 
-puis fais 
+puis pour enregistrer les modification 
 
     git puch
