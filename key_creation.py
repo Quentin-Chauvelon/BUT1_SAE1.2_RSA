@@ -25,6 +25,11 @@ def extended_gcd(a,b):
 			v = z
 
 
+def encryption(n, priv, msg):
+
+	# if message > n return
+
+
 def key_creation():
 
 	i = 3
@@ -67,6 +72,8 @@ def key_creation():
 		e += 1 # augmenter jusqu'à avoir un e qui fait un pgcd de 1 avec phi
 
 
+#
+
 	u,v,_ = extended_gcd(phi, e)
 
 	if v >= 0:
@@ -74,12 +81,8 @@ def key_creation():
 	else:
 		d = -v
 
-	return "Clé publique : (" + str(n) + ", " + str(e) + "), clé privée : (" + str(n) + ", " + str(d) + ")"
+	print("Clé publique : (" + str(n) + ", " + str(e) + "), clé privée : (" + str(n) + ", " + str(d) + ")")
+
+	encryption(n, pub, msg)
 
 print(key_creation())
-# u x e + v + phi = 1
-# u x e = 1 - v * phi
-# u x e = 1[phi]
-
-# u : clé privé
-# v : clé publique
